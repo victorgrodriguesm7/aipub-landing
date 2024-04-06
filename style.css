@@ -1,0 +1,367 @@
+header {
+    display: flex;
+    align-items: center;
+
+    margin: 2rem auto;
+    width: 70%;
+}
+
+header .header-logo {
+    margin-right: 1rem;
+}
+
+header .nav-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+header .nav-items .nav-item {
+    text-decoration: none;
+    color: var(--text);
+
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+header .get-in-touch-action {
+    margin-left: auto;
+}
+
+.get-in-touch-action {
+    padding: 1.25rem 1.5rem;
+    font-size: 1.2rem;
+
+    color: var(--background);
+    background-color: var(--primary);
+
+    border-radius: 2rem;
+    text-decoration: none;
+
+    transition: all 0.2s ease;
+}
+
+.get-in-touch-action:hover {
+    filter: brightness(1.1);
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-title {
+    margin-top: 4rem;
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.main-title-description {
+    margin: 1rem 0;
+    font-size: 1.125rem;
+}
+
+.main-title-description + .get-in-touch-action {
+    margin: 1rem 0;
+}
+
+.top-features-wrapper {
+    background: url("./assets/wave.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100% auto;
+}
+
+.top-features {
+    position: relative;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    
+    width: min-content;
+    margin: 0 auto;
+}
+
+.top-features .app-screenshot {
+    height: 100vh;
+}
+
+.feature-list {
+    list-style: none;
+}
+
+.feature-list .feature-item {
+    position: absolute;
+    display: flex;
+
+    padding: .25rem .5rem;
+
+    border-radius: .5rem;
+
+    background: var(--background);
+    box-shadow: 0px 1px 5px var(--black25);
+
+    width: calc(1rem * 21);
+}
+
+.feature-list .feature-item:nth-child(1) {
+    top: 8vh;
+    left: 8vh;
+    transform: translateX(-75%);
+}
+
+.feature-list .feature-item:nth-child(2) {
+    top: 32vh;
+    left: 2vh;
+    transform: translateX(-75%);
+}
+
+.feature-list .feature-item:nth-child(3) {
+    top: 35vh;
+    right: 2vh;
+    transform: translateX(75%);
+}
+
+.feature-list .feature-item:nth-child(4) {
+    top: 50vh;
+    left: 2vh;
+    transform: translateX(-75%);
+}
+
+.feature-list .feature-item .feature-icon {
+    background: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: .25rem;
+    margin-right: .5rem;
+}
+
+.feature-list .feature-item .feature-label {
+    padding: .5rem 0;
+
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+.tip-wrapper {
+    position: relative;
+    overflow: visible;
+}
+
+.tip-background {
+    position: absolute;
+    top: 0;
+
+    display: flex;
+    background: url("./assets/wave.svg");
+    height: 100vh;
+    width: 100%;
+
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100% auto;
+
+    z-index: -1;
+
+    transform: rotate(180deg);
+}
+
+.tip {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+}
+
+.tip .tip-image-container {
+    margin: 2rem auto;
+    width: 80%;
+}
+
+.tip .tip-image-container img {
+    width: 100%;
+}
+
+.tip .tip-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+
+    padding-top: 4rem;
+}
+
+.tip .tip-article .tip-title {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--background);
+}
+
+.tip .tip-article .tip-subtitle {
+    margin: 8rem 0 2rem;
+
+    width: 80%;
+    text-align: center;
+    color: var(--text);
+}
+
+.form-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: visible;
+}
+
+.form-background {
+    position: absolute;
+    top: 0;
+
+    display: flex;
+    background: url("./assets/wave-diagonal.svg");
+    height: 100vh;
+    width: 100%;
+
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+
+    z-index: -1;
+}
+
+.form-wrapper  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: var(--formBg);
+
+    margin-top: 4rem;
+    border-radius: 1.5rem;
+    padding: 1.5rem 2rem 2rem;
+
+    width: 45%;
+    min-width: 450px;
+    aspect-ratio: 2 / 1;
+}
+
+.form-wrapper .form-text-input {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    border: 0;
+}
+
+.form-wrapper .form-text-input label {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.form-wrapper .form-text-input input {
+    border: 0;
+    outline: 0;
+    border-radius: 1rem;
+    font-size: 1.25rem;
+    padding: 1rem .5rem;
+
+    background: var(--inputBg);
+    margin: .5rem 0;
+}
+
+.form-wrapper .form-checkbox-input {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+
+    margin: .55rem 0;
+    border: 0;
+    outline: 0;
+}
+
+.form-wrapper .form-checkbox-input input {
+    border: 0;
+    outline: 0;
+
+    height: 1.25rem;
+    width: 1.25rem;
+
+    margin-right: 1rem;
+}
+
+.form-wrapper .form-checkbox-input label {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.form-send-button {
+    margin-top: 2rem;
+    padding: 1.25rem 4rem;
+    font-size: 1.2rem;
+
+    color: var(--background);
+    background-color: var(--primary);
+
+    border-radius: 2rem;
+    border: 0;
+    outline: 0;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 4rem;
+
+    background: var(--inputBg);
+    border-radius: 2rem 2rem 0 0;
+    padding: 2rem 1rem 1rem 1rem;
+}
+
+footer .aipub-logo {
+    display: flex;
+    align-items: center;
+}
+
+footer .aipub-logo img {
+    margin-right: 2rem;
+}
+
+footer .aipub-logo h3 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.talk-with-us {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;   
+}
+
+.talk-with-us-mail {
+    margin-top: 1rem;
+
+    display: flex;
+    align-items: center;
+}
+
+.talk-with-us-mail-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 1rem;
+    background: var(--primary);
+    padding: .5rem;
+    border-radius: 50%;
+}
+
+.talk-with-us-mail a {
+    text-decoration: none;
+    color: var(--text);
+}

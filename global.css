@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --text: #0E0A07;
+  --background: #FBF6F4;
+  --primary: #F2802F;
+  --secondary: #523023;
+  --accent: #933011;
+
+  --black25: rgba(0, 0, 0, 0.25);
+  --formBg: #EDEBE9;
+  --inputBg: #D9D9D9;
+}
+
+body {
+  background-color: var(--background);
+  
+  font-family: 'Roboto', sans-serif;
+}
