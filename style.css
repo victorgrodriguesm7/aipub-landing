@@ -196,9 +196,19 @@ header .get-in-touch-action {
     padding-top: 4rem;
 }
 
+
+.tip:nth-child(2n) .tip-article{
+    order: -1;
+}
+
 .tip .tip-article .tip-title {
     font-size: 3rem;
     font-weight: 600;
+    color: var(--text);
+}
+
+
+.tip .tip-article:first-child .tip-title {
     color: var(--background);
 }
 
@@ -364,4 +374,146 @@ footer .aipub-logo h3 {
 .talk-with-us-mail a {
     text-decoration: none;
     color: var(--text);
+}
+
+.nav-hamburguer {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+@media (max-width: 1024px) {
+    header { 
+        width: 100%;
+        padding: 0 .5rem;
+        margin: .5rem 0;
+    }
+
+    .nav-items + .get-in-touch-action {
+        display: none;
+        appearance: none;
+    }
+
+    header .nav-items {
+        flex: 1;
+        justify-content: flex-end;
+    }
+
+    .nav-hamburguer {
+        display: block;
+        position: relative;
+
+        width: auto;
+        height: auto;
+        
+        margin: 1rem;
+    }
+
+    .nav-item {
+        display: none;
+        width: 0;
+        appearance: none;
+    }
+
+    .top-features {
+        height: auto;
+        padding-bottom: 1.5rem;
+    }
+
+    .app-screenshot {
+        display: none;
+    }
+
+    .main-title {
+        font-size: 4.5rem;
+    }
+    
+    .main-title-description {
+        text-align: center;
+        margin: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .get-in-touch-action {
+        font-size: 1.75rem;
+    }
+
+    .feature-list {
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 2rem;
+        gap: 1rem;   
+    }
+
+    .feature-list .feature-item {
+        position: relative;
+        display: flex;
+
+        padding: .5rem 1rem;
+    
+        border-radius: .5rem;
+    
+        background: var(--background);
+        box-shadow: 0px 2px 8px var(--black25);
+    
+        width: 80vw;
+    }
+    
+    .feature-list .feature-item:nth-child(1) {
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+    
+    .feature-list .feature-item:nth-child(2) {
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+    
+    .feature-list .feature-item:nth-child(3) {
+        top: 0;
+        right: 0;
+        transform: none;
+    }
+    
+    .feature-list .feature-item:nth-child(4) {
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+        
+    .feature-list .feature-item .feature-label {
+        padding: .5rem 0;
+
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .tip {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .tip .tip-article {
+        padding: .5rem 0;
+    }
+
+    .tip .tip-article .tip-title {
+        padding: 0 1rem;
+        text-align: center;
+        color: var(--text);
+    }
+
+    .tip .tip-article .tip-subtitle {
+        margin: 1.5rem 0;
+        text-align: center;
+        font-size: 1.25rem;
+    }
+    
+    .tip:nth-child(2n) .tip-article{
+        order: 1;
+    }
 }
